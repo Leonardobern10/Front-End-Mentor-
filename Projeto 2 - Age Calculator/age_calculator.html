@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <style>
+        div#central{
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            bottom: 20%;
+            right: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div id = 'central'>
+        <span>
+             Day <input type="number" name="dia" id="dia">
+
+             Month<input type = 'number' name = 'mes' id = 'mes'>
+
+             Year<input type = 'number' name = 'ano' id = 'ano'> 
+        </span>
+        <hr>
+        <input type = 'button' value = 'calculoIdade' onclick = 'calculoIdade()'>
+        <div> 
+            <div id = 'anosTotais' > -- Years </div>
+            
+            <div id = 'mesesTotais'> -- Months </div>
+             
+            <div id = 'diasTotais'> -- Days </div>
+        </div>
+    </div>
+    <script>
+        function calculoIdade(){
+            var dia = window.document.getElementById('dia')
+            var mes = window.document.getElementById('mes')
+            var ano = window.document.getElementById('ano')
+
+            var diasTotais = window.document.getElementById('diasTotais')
+            var mesesTotais = window.document.getElementById('mesesTotais')
+            var anosTotais = window.document.getElementById('anosTotais')
+
+            var dia_1 = Number(dia.value)
+            var mes_1 = Number(mes.value)
+            var ano_1 = Number(ano.value)
+            var diasTotais_1 = Number(diasTotais.value)
+            var mesesTotais_1 = Number(meseTotais.value)
+            var anosTotais_1 = Number(anosTotais.value)
+
+            var res1 = 2023 - ano_1;
+            anosTotais.innerHTML = `${anos_Totais} years`
+            var res2 =  4 - mes_1;
+            mesesTotais.innerHTML = `${meses_Totais} months`
+            var res3 = 25 - dia_1;
+            diasTotais.innerHTML = `${dias_Totais} days`
+
+        }
+        
+    </script>
+</body>
+</html>
