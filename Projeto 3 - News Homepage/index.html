@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type = 'text/css'>
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+        @media (max-width: 375px){
+        
+            header{
+                top: 0%;
+                margin-left: 3%;
+                margin-right: 3%;
+                height: 100px;
+                width: 94%;
+            }
+
+            .margem{
+                margin-right: 3%;
+                margin-left: 3%;
+            }
+
+            #w{
+                position: absolute;
+                top: 5%;
+                left: 5%;
+            }
+
+            #menu{
+                position:absolute;
+                top: 6%;
+                right: 5%;
+                width: 12%;
+                height: 3%;
+            }
+
+            #imagemPrincipal{
+                margin-top: 2%;
+                margin-left: 3%;
+                margin-right: 3%;
+                width: 94%;
+            }
+
+            #butao{
+                border-style: none;
+                background-color: hsl(5, 85%, 63%);
+                color: aliceblue;
+                letter-spacing: 2px;
+                line-height: 30px;
+                margin-top: 2%;
+                margin-left: 3%;
+                height: 80%;
+                width: 40%;
+                font-family: 'Inter', sans-serif;
+            }
+
+            #divPrincipal{
+                background-color: hsl(240, 100%, 5%);
+                padding-bottom: 10px;
+            }
+
+            .seçao{
+                display: inline-flex;
+                margin-top: 7%;
+                padding-bottom: 10px;
+            }
+
+            .padraoImagem{
+                margin-left: 8%;
+                margin-right: 3%;
+                width: 94%;
+            }
+
+            .textoComplementar{
+                position: relative;
+                left: 6%;
+                font-family: 'Inter', sans-serif;
+            }
+            
+            .formatoTexto{
+                top: 5%;
+                margin-left: 5%;
+                margin-top: 5%;
+                margin-bottom: 5%;
+                margin-right: 4%;
+                color: hsl(36, 100%, 99%)
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img id = 'menu' src = "https://raw.githubusercontent.com/Leonardobern10/Front-End-Mentor-/2fdd40acf18c7c9b464dc8ef4ad39feeb1aaeba5/Projeto%203%20-%20News%20Homepage/Imagens/icon-menu.svg" alt = "logo">
+        <img id = 'w' src = "https://raw.githubusercontent.com/Leonardobern10/Front-End-Mentor-/2fdd40acf18c7c9b464dc8ef4ad39feeb1aaeba5/Projeto%203%20-%20News%20Homepage/Imagens/logo.svg" alt = "icone-menu">
+     </header>
+    <main>
+        <img id = 'imagemPrincipal' src = "https://github.com/Leonardobern10/Front-End-Mentor-/blob/main/Projeto%203%20-%20News%20Homepage/Imagens/image-web-3-mobile.jpg?raw=true" alt = "imagemPrincipal">
+        <h1 class = 'margem'> The Bright Future of the web 3.0? </h1>
+        <p class= 'margem'> We dive into the next evolution of the web that claims to put the power of the 
+            platforms back into the hands of the people. But is it really fulfillin its promise?
+        </p>
+        <input type = "button" id = "butao" value = " READ MORE ">
+    </main>
+    <div class = 'margem' id = 'divPrincipal'>
+        <h2 style = 'color: hsl(35, 77%, 62%); position: relative; top: 10px; margin-bottom: 35px;' class = 'formatoTexto'> New </h2>
+        <h4 class = 'formatoTexto'> <strong> Hydrogen VS Eletric Cars </strong></h4>
+        <p class = 'formatoTexto'> Will hydrogen-fueled cars ever cacth up to EVs? </p>
+        <hr />
+        <h4 class = 'formatoTexto'> <strong> The Downsides of AI Artistry </strong></h4>
+        <p class = 'formatoTexto'> What are the possible aderse effectes of on-demand AI image generation?</p>
+        <hr />
+        <h4 class = 'formatoTexto'> <strong> Is VC Funding Drying Up? </strong></h4>
+        <p class = 'formatoTexto'> Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+    </div>
+    <section>
+        <article class="seçao"> 
+            <diV>
+                <img class="padraoImagem" src = 'https://github.com/Leonardobern10/Front-End-Mentor-/blob/main/Projeto%203%20-%20News%20Homepage/Imagens/image-retro-pcs.jpg?raw=true' alt = 'pc_retrô'>
+            </diV>
+            <div class = "textoComplementar">
+                <h2 style = 'color:hsl(233, 8%, 79%)'> 01 </h2>
+                <h4 style = 'color:hsl(236, 13%, 42%)'> Reviving Retro PCs </h4>
+                <p> What happens when old PCs are given modern upgrades?</p>
+            </div>
+            <br />
+        </article>
+        <article class = "seçao">
+            <div>
+                <img class = "padraoImagem" style = "width: 82%;" src = "https://github.com/Leonardobern10/Front-End-Mentor-/blob/main/Projeto%203%20-%20News%20Homepage/Imagens/image-top-laptops.jpg?raw=true" alt = "teclado">
+            </div>
+            <div>
+                <h2 style = 'color:hsl(233, 8%, 79%)'> 02 </h2>
+                <h4 style = 'color:hsl(236, 13%, 42%)'> Top 10 Laptops of 2022 </h4>
+                <p> Our best picks for various needs and budgets.</p>
+            </div>
+            <br />
+        </article>
+        <article class = "seçao">
+            <div>
+                <img class = "padraoImagem" style = "width: 88%;" src = "https://github.com/Leonardobern10/Front-End-Mentor-/blob/main/Projeto%203%20-%20News%20Homepage/Imagens/image-gaming-growth.jpg?raw=true" alt = "controle_ps4">
+            </div>
+            <div>
+                <h2 style = 'color:hsl(233, 8%, 79%)'> 03 </h2>
+                <h4 style = 'color:hsl(236, 13%, 42%)'> The Growth of Gaming</h4>
+                <p> How the pandemic has sparked fresh oppotunities.</p>
+            </div>
+            <br />
+        </article>
+    </section>
+</body>
+</html>
